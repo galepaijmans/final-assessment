@@ -1,0 +1,4 @@
+student name: Gale Paijmans
+student number: 646295
+student class: IT1C
+URL student GitHub repository: https://github.com/galepaijmans/final-assessment.git
