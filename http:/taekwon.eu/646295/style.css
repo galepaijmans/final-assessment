@@ -1,0 +1,800 @@
+/* Default Setting */
+@font-face 
+{
+    font-family: 'Lobster';
+    src: url('..final/fonts/Lobster-Regular.ttf');
+}
+@font-face 
+{
+    font-family: 'Ubuntu';
+    src: url('..final/fonts/Ubuntu-Regular.ttf');
+}
+*
+{
+	border: 0;
+	margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu',cursive,sans-serif;
+    letter-spacing: 0.0625em;
+}
+/* The header of the webpage */
+/* Navigation bar */
+.toggle-menu ul
+{
+    display: table;
+    width: 1.75em;
+    margin: 0 1%;
+}
+.toggle-menu ul li
+{
+    width: 100%;
+    height: 0.25em;
+    background-color: #ff6347;
+    margin-bottom: 10%;
+}
+.toggle-menu ul li:last-child
+{
+    margin-bottom: 0;
+}
+input[type=checkbox], label
+{
+    display: none;
+}
+.nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #022d41;
+    font-weight: bolder;
+}
+.nav li
+{
+    float: left;
+    border-right: 0.07em solid #fffff0; 
+}
+.nav li:last-child
+{
+    float: right;
+    border-right: none;
+}
+.nav li a
+{
+    display: block;
+    color: #fffff0;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.875em 1em;
+}
+.nav li a:hover:not(active)
+{
+    background-color: #fe424d;
+    color: #fffff0;
+}
+.nav .active
+{
+    background-color: #fe424d;
+    color: #ffffff;
+}
+.header
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fffff0;
+}
+.header h1
+{
+    color: #fe424d;
+    position: absolute;
+    margin: 7% 0 0 9%;
+    font-family: 'Lobster',cursive,sans-serif;
+    font-size: 10em;
+}
+.header h2
+{
+    text-align: inherit;
+    color: #022d41;
+    text-transform: uppercase;
+    position: absolute;
+    max-width: 30%;
+    margin: 12% 0 0 0%;
+    right: 0;
+    font-family: 'Ubuntu',cursive,sans-serif;
+}
+.header video
+{
+    z-index: 0;
+    top: 0;
+    right: 0;
+    background-color: #fffff0;
+    margin: auto;
+}
+/* The body of the webpage */
+/* Main content  */
+#maincontent header
+{
+    position: relative;
+    background-color: #fe424d;
+    color: #ffffff;
+    margin: 1.25% 0 1.25% 1.25%;
+    padding: 1%;
+}
+.content1
+{
+    border-left: 0.375em solid #daecf3;
+    background-color: #022d41;
+    color: #ffffff;
+    margin: 1% 2.5% 1% 5%;
+    padding: 1%;
+    line-height: 140%;
+    overflow: auto;
+}
+.content1 img
+{
+    float: left;
+    height: 10em;
+    width: 13em;
+    padding: 0.5% 1% 0.5% 0.5%;
+}
+.content2
+{
+    color: #022d41;
+    border-width: 0.625em;
+    border-left:0.375em solid #022d41;
+    background-color: #ffffff;
+    margin: 1% 5% 1% 2.5%;
+    padding: 1%;
+    line-height: 140%;
+    overflow: auto;
+}
+.content2 img
+{
+    float: right;
+    height: 10em;
+    width: 13em;
+    padding: 0.5% 0.5% 0.5% 1%;
+}
+#maincontent footer
+{
+    margin: 1.25% 0 1.25% 1.25%;
+    background-color: #fffff0;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1%;
+}
+#maincontent .towebsite
+{
+    color: #022d41;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 1%;
+
+}
+#maincontent .towebsite:hover
+{
+    color: #fe424d;
+    background-color: #fffff0;
+    padding: 1%;
+}
+/* Secondary content (content1 and content2 are the same as main content */
+#secondarycontent header
+{
+    position: relative;
+    background-color: #fe424d;
+    color: #ffffff;
+    margin: 1.25% 0 1.25% 1.25%;
+    padding: 1%;
+}
+.content3
+{
+    border-left: 0.375em solid #daecf3;
+    background-color: #022d41;
+    color: #ffffff;  
+    margin: 1% 2.5% 1% 5%;
+    padding: 1%;
+    line-height: 140%
+}
+.content4
+{
+    color: #022d41;
+    border-width: 0.625em;
+    border-left:0.375em solid #022d41;
+    background-color: #ffffff;
+    margin: 1% 5% 1% 2.5%;
+    padding: 1%;
+    line-height: 140%;
+    overflow: auto;
+}
+.content4 img
+{
+    float: right;
+    height: 10em;
+    width: 13em;
+    padding: 0.5% 0.5% 0.5% 1%;
+}
+#secondarycontent footer
+{
+    margin: 1.25% 0 1.25% 1.25%;
+    background-color: #fffff0;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1%;
+}
+#secondarycontent .towebsite
+{
+    color: #022d41;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 1%;
+
+}
+#secondarycontent .towebsite:hover
+{
+    color: #fe424d;
+    background-color: #fffff0;
+    padding: 1%;
+}
+/* Sport content */
+#sportcontent header
+{
+    position: relative;
+    background-color: #fe424d;
+    color: #ffffff;
+    margin: 1.25% 0 1.25% 1.25%;
+    padding: 1%;
+}
+.list
+{
+    background-color: #fffff0;
+    margin: 1.25%;
+    list-style-type: none;
+}
+#sportcontent .list h3
+{
+    padding: 1%;
+    background-color: #022d41;
+    color: #fffff0;
+    text-transform: uppercase;
+    margin-bottom:0.5%;
+}
+#sportcontent li
+{
+    padding: 1%;
+}
+#sportcontent .list > p
+{
+    margin: 0 1.25%;
+    background-color: #fffff0;
+    color: #022d41;
+    padding: 1%;
+    line-height: 140%;
+    overflow: auto;
+    position: relative;
+}
+#sportcontent .list img
+{
+    float: left;
+    height: 4.5em;
+    width: 6em;
+    padding: 0.5% 1% 0.5% 0.5%;
+}
+#sportcontent footer
+{
+    margin: 1.25% 0 1.25% 1.25%;
+    background-color: #fffff0;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1%;
+}
+#sportcontent .towebsite
+{
+    color: #022d41;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 1%;
+}
+#sportcontent .towebsite:hover
+{
+    color: #fe424d;
+    background-color: #fffff0;
+    padding: 1%;
+}
+/* Referral content */
+#referralcontent header
+{
+    text-transform: uppercase;
+    position: relative;
+    background-color: #fe424d;
+    color: #ffffff;
+    margin: 1.25% 0 1.25% 1.25%;
+    padding: 1%;
+}
+#referralcontent aside
+{
+    margin: 1% 2.5% 1% 5%;
+    line-height: 140%;
+}
+.referral
+{
+    background-color: #fffff0;
+    margin: 1%;
+    padding: 1%;
+    margin-bottom: 1%;
+    list-style-type: none;
+}
+.club h4 
+{
+    color: #ff6347;
+}
+.Address
+{
+    margin: 1%;
+}
+.Maps
+{
+    margin: 0% 1% 1%;
+    font-size: 0.85em;
+}
+.Maps a:link
+{
+    display: inline-block;
+    background-color: #fe424d;
+    border-radius: 0.25em;
+    padding: 0.5%;
+    text-decoration: none;
+}
+.Maps a:hover
+{
+    color: #022d41;
+    background-color: #ff6347;
+}
+#referralcontent .towebsite
+{
+    display: inline-block;
+    color:#fffff0;
+    padding: 0.5%;
+    margin: 0 0 0.5%;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: #022d41;
+    border-radius: 0.25em;
+    font-size: 1em;
+
+}
+#referralcontent .towebsite:hover
+{
+    background-color: #ff6347;
+    color: #022d41;
+}
+#referralcontent footer
+{
+    margin: 1.25% 0 1.25% 1.25%;
+    background-color: #fffff0;
+    text-transform: uppercase;
+    padding: 1%;
+    color: #fe424d;
+}
+/* Contact content */
+#contactcontent header
+{
+    position: relative;
+    background-color: #fe424d;
+    color: #ffffff;
+    margin: 1.25% 0 1.25% 1.25%;
+    padding: 1%;
+}
+.row
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+fieldset
+{
+    margin: 1% 2.5% 1% ;
+}
+legend
+{
+    margin: 1% 0;
+    color: #ffffff;
+    background-color: #022d41;
+    padding: 1%;
+    text-transform: capitalize;
+}
+input[type=text],textarea
+{
+    width: 100%;
+    margin: 1.25% 6.25% 1.25% 1.25%;
+    padding: 1%;
+    box-sizing: border-box;
+    border: 0.1em solid #022d41;
+    border-radius: 0.25em;
+    background-color:#fffff0;
+    resize: none;
+}
+textarea
+{
+    height: 12.5em;
+}
+input[type=submit]
+{
+    text-transform: uppercase;
+    background-color: #022d41;
+    color: #fffff0;
+    font-size: 1em;
+    box-sizing: border-box;
+    border-radius: 0.25em;
+    padding: 2% 3% ;
+    cursor: pointer;
+    float: right;
+    margin: 0;
+}
+input[type=submit]:hover
+{
+    background-color: #fe424d;
+    color:#022d41;
+}
+.direct fieldset
+{
+    display: inline-block;
+    padding: 2%;
+}
+.direct legend
+{
+    padding: 3%;
+}
+.direct h4
+{
+    margin-top: 2%;
+}
+.website a
+{
+    margin-top: 2%;
+    color: #022d41;
+}
+.website a:hover
+{
+    color: #fe424d;
+}
+.social
+{
+    display: inline;
+}
+.social img
+{
+    height: 2.5em;
+    width: 2.5em;
+}
+/* Cookies Statement */
+#Cookiesstatement
+{
+    background-color: #fae4ce;
+    border-radius: 0.25em;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: fixed;
+    padding: 1.5%;
+    margin: 1.25% 2.5% 1.25% 2.5% ;
+    color: #2b2129;
+    line-height: 200%;
+    max-width:35%;
+}
+#Cookiesstatement header
+{
+    font-size: 1.5em;
+}
+button
+{
+    display: inline;
+    padding: 1%;
+    border-radius: 0.25em;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #d65766;
+    color: #fffff0;
+}
+button:hover
+{
+    background-color: #ff6347;
+    color: #fffff0;
+}
+#Cookiesstatement a
+{
+    text-transform: uppercase;
+    color: #d65766;
+}
+#Cookiesstatement a:hover
+{
+    text-transform: uppercase;
+    color: #022d41;
+}
+/* The footer of the webpage */
+.footer
+{
+    margin-top: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fffff0;
+    color: #fe424d; 
+    padding: 1.5%
+}
+/* Media Queries for tablets */
+@media screen and (min-width: 481px) and (max-width: 1179px)
+{
+    *
+    {
+        font-size: smaller;
+    }
+    /* The header part of the webpage */
+    h1,h2,video
+    {
+        display: flex;
+        flex-direction: unset;
+    }
+    .header h1
+    {
+        font-size: 5em;
+        margin: 10% 4%;
+        background-color: #fffff0;
+        padding: 1%;
+        border-radius: 0.25em;
+    }
+    .header h2
+    {
+        font-size: 2em;
+        top: 10%;
+        left: 3%;
+        background-color: #fffff0;
+        padding: 1.5%;
+        border-radius: 0.25em;
+        max-width: 20%;
+        bottom: 50%;
+    }
+    .header video
+    {
+        margin-left: 40%;
+        height: auto;
+        max-width: 100%;
+    }
+    /* Main and secondary content */
+    .layout
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .content1,.content2,.content3,.content4
+    {
+        text-align: initial;
+        width: 70%;
+        margin: 0 auto 1%;
+        padding: 2%;
+        line-height: 150%;
+        border-left: none;
+        flex: 1;
+    }
+    .content1,.content3
+    {
+        border-top: solid #daecf3 0.375em;
+        border-bottom: solid #022d41 0.1em;
+        border-left: solid #022d41 0.1em;
+        border-right: solid #022d41 0.1em;
+    }
+    .content2,.content4
+    {
+        border-top: solid #022d41  0.375em;
+        border-bottom: solid #022d41 0.1em;
+        border-left: solid #022d41 0.1em;
+        border-right: solid #022d41 0.1em;
+    }
+    .content1 img
+    {
+        margin: 1% auto;
+        width: 100%;
+        height: auto;
+    }
+    .content2 img
+    {
+        margin: 1% auto;
+        width: 100%;
+        height: auto;
+    }
+    .content4 img
+    {
+        top: 0;
+        margin: 1% auto;
+        width: 100%;
+        height: auto;
+    }
+    .nav ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #022d41;
+        font-weight: bolder;
+        font-size: small;
+    }
+    /* Sport content */
+    #sportcontent ul
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 1%;
+        font-size: 0.8em;
+    }
+    #sportcontent li
+    {
+        padding: 2%;
+        font-size: 1em;
+    }
+    .list > p
+    {
+        padding: 1%;
+    }
+    .list img
+    {
+        margin: auto;
+    }
+    /* Contact content */
+    .row
+    {
+        display: block;    
+    }
+    .direct legend
+    {
+        padding: 1%;
+    }
+    /* Cookies Statement */
+    #Cookiesstatement
+    {
+    line-height: 150%;
+    font-size: 0.7em;
+    }
+}
+/* Media Queries for mobile */
+@media screen and (max-width: 480px)
+{
+    /* The header part of the webpage */
+    h1,h2,video
+    {
+        display: flex;
+        flex-direction: unset;
+    }
+    .header h1
+    {
+        font-size: 3em;
+        margin: 10% 4%;
+        background-color: #fffff0;
+        padding: 1%;
+        border-radius: 0.25em;
+    }
+    .header h2
+    {
+        font-size: 1em;
+        top: 40%;
+        right: 0;
+        background-color: #fffff0;
+        padding: 1.5%;
+        border-radius: 0.25em;
+        max-width: 70%;
+    }
+    .header video
+    {
+        margin: auto;
+    }
+    /* Hamburger menu */
+    label
+    {
+        padding: 1.5% 0;
+        display: inline-block;
+        cursor: pointer;
+        color: #022d41;
+    }
+    .toggle-menu img
+    {
+        width: 10%;
+        height: 15%;
+    }
+    input[type=checkbox]:checked ~ nav
+    {
+        display: block;
+    }
+    .nav 
+    {
+        display: none;
+        position: absolute;
+        left: 10%;
+        top: 3%;
+        padding: 0;
+        z-index: 99;
+        background-color: #ff6347;
+    }
+    nav ul
+    {
+        width:auto;
+    }
+    nav ul li
+    {
+        float:none; 
+        padding:0px; 
+        width:100%; 
+        display:table;
+        color: #022d41;
+    }
+    /* Main and secondary content */
+    .content1,.content2,.content3,.content4
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+        width: 70%;
+        margin: 0 auto 1%;
+        padding: 2%;
+        line-height: 150%;
+        border-left: none;
+
+    }
+    .content1,.content3
+    {
+        border-top: solid #daecf3 0.375em;
+        border-bottom: solid #022d41 0.1em;
+        border-left: solid #022d41 0.1em;
+        border-right: solid #022d41 0.1em;
+    }
+    .content2,.content4
+    {
+        border-top: solid #022d41  0.375em;
+        border-bottom: solid #022d41 0.1em;
+        border-left: solid #022d41 0.1em;
+        border-right: solid #022d41 0.1em;
+    }
+    .content1 img
+    {
+        margin: 2.5% auto;
+        width: 90%;
+    }
+    .content2 img
+    {
+        margin: 2.5% auto;
+        width: 90%;
+    }
+    /* Sport content */
+    #sportcontent ul
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 1%;
+        font-size: 0.8em;
+    }
+    #sportcontent li
+    {
+        padding: 2%;
+        font-size: 1em;
+    }
+    .list > p
+    {
+        padding: 1%;
+    }
+    .list img
+    {
+        margin: auto;
+    }
+    /* Contact content */
+    .row
+    {
+        display: block;    
+    }
+    .direct legend
+    {
+        padding: 1%;
+    }
+    /* Cookies Statement */
+    #Cookiesstatement
+    {
+    line-height: 150%;
+    font-size: 0.7em;
+    }
+}
