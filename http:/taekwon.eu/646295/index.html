@@ -327,20 +327,20 @@
                 <h2> CONTACT </h2>
             </header>
             <article class="row">
-                <form action="http://witan.nl/inholland/testform.php">
+                <form action="http://witan.nl/inholland/testform.php" method="POST">
                     <fieldset >
                         <legend>
                         Leave us a message
                         </legend>
-                        <label>
+                        <label for="visitorname" name="name">
                             Name* :
                         </label>
                         <input type="text" name="name" placeholder="Gale Paijmans">
-                        <label>
+                        <label for="visitoremail" name="email">
                             Email-Address* :
                         </label>
                         <input type="text" name="email" placeholder="example@gmail.com">
-                        <label>
+                        <label for="visitormessage" name="message">
                             Message* :
                         </label>
                         <textarea name="message" placeholder="Type Your Messages Here"></textarea>
@@ -388,7 +388,7 @@
                 This website uses Cookies to ensure you get the best experience on our website
                 <a href="http://www.whatarecookies.com/"> More info </a>
             </p>
-            <button id="button" onclick="self.close"> I accept </button> 
+            <button id="button" onclick="close()"> I accept </button> 
         </section>
         <!-- Footer part of the webpage -->
         <footer class="footer">
